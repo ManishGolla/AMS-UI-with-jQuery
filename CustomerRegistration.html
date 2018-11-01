@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="HomePage.html">AMS</a>
+    </nav>
+
+    <div class="container jumbotron bg-light col-6 mt-5" class="container jumbotron bg-light col-6 mt-5">
+
+        <center>
+            <h1>Customer Registration</h1>
+        </center>
+
+
+
+        <hr>
+
+        <form action="" id="Customer.form">
+
+            <div class="form-group ">
+
+                <label for="Customer.Name">Name</label>
+
+                <input class="form-control" id="Customer.Name" type="text" name="" placeholder="First name">
+                <br>
+
+
+                <input class="form-control" type="text" name="" placeholder="Middle name">
+
+                <br>
+                <input class="form-control" type="text" name="" placeholder="Last name">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="Customer.Address"> Address</label>
+
+                <textarea class="form-control" id="Customer.Address" type="text" rows="3" placeholder="Address"></textarea>
+
+            </div>
+
+            <div class="form-group ">
+                <label for="Customer.City">City</label>
+
+                <input class="form-control" id="Customer.City" type="text" name="">
+
+            </div>
+
+            <div class="form-group ">
+                <label for="Customer.State">State</label>
+
+                <input class="form-control" id="Customer.State" type="text" name="">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="Customer.pincode">Zip Code</label>
+
+                <input class="form-control" id="Customer.pincode" type="text" name="">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="Customer.employment">Employment</label>
+                <select class="custom-select" id="Customer.employment">
+                    <option value="Employee"> Employee</option>
+                    <option value="Self Employed">Self Employed</option>
+                </select>
+
+                <!-- <label for="">Self Employed</label>
+
+                                    <input class="form-control" type="radio" name="employment" value="Self Employed">
+
+                                    <label for="">Employee</label>
+
+                                    <input class="form-control" type="radio" name="employment" value="Employee"><br> 
+
+                                    <input class="form-control" id="Customer.employment" type="text" name="" placeholder="Details" >
+-->
+
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="Customer.Contact">Contact No</label>
+
+                <input class="form-control" id="Customer.Contact" type="text" name="" placeholder="Enter your phone number">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="Customer.Email">Email Id</label>
+
+                <input class="form-control" id="Customer.Email" type="text" name="" placeholder="Enter your email Id">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="Customer.Mode">Contact Mode</label>
+                <select class="custom-select" id="Customer.Mode">
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone
+
+                    </option>
+                </select>
+
+                <br>
+
+                <!-- <label>Phone</label>
+
+                                    <input class="form-control" type="radio" name="mode">
+
+                                    <label>Email</label>
+
+                                    <input class="form-control" type="radio" name="mode">
+
+                                    <br>
+
+                                    <input class="form-control" id="Customer.Mode" type="text" name="" placeholder="mode">-->
+
+            </div>
+
+
+
+            <div class="form-group ">
+
+                <label for="Customer.Insurance">Insurance Already Have</label>
+                <select class="custom-select" id="Customer.Insurance">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <!--
+            <label for="Customer.Insurance">Yes</label><input class="form-control" type="radio" name="insurance" >
+
+            <label for="Customer.Insurance">No</label><input class="form-control" type="radio" name="insurance">
+
+            <input class="form-control" type="text" id="Customer.Insurance" placeholder="Enter additonal details">-->
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="customer.Annual">Annual Income</label>
+
+                <input class="form-control" type="text" id="customer.Annual" placeholder="Enter income">
+
+            </div>
+
+            <div class="form-group ">
+                <label for="customer.appointement">Appointment Date</label>
+
+                <input class="form-control" type="date" id="customer.appointment" placeholder="customer.appontment">
+
+            </div>
+
+            <div class="form-group ">
+                <label for="customer.time">Preferred Time</label>
+                <input class="form-control" type="time" id="customer.time">
+            </div>
+            <hr>
+            <div class="form-group ">
+                    <center>
+                            <button type="submit " class="btn btn-primary col-6">Register</button>
+                            <button class="btn  col-5" id="Customer.reset" type="reset" value="Reset">Reset</button>
+                        </center>
+
+
+            </div>
+
+    </div>
+
+
+
+
+
+    </form>
+      
+    
+</body>
+
+</html>

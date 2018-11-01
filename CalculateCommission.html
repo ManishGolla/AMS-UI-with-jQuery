@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agent Commission</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="calculatecommission.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="AdminHome.html">AMS</a>
+<ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="AgentRegistration.html">Agent Registration</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Calculate Commission</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MangeLicences.html">Manage Licences</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" href="CustomerPolicyRegistration.html">Customer Policy Registration</a>
+          </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+            <a class="btn btn-info" href="HomePage.html">Logout</a>
+        </ul>
+    </nav>
+    
+    <div class="container jumbotron bg-light col-6 mt-5">
+        <div><center><h3>Enter Details</h3></center></div><hr><br>
+        <div class="form-group ">
+            <label for="CustomerPolicy.Fromdate">From Date </label>
+
+            <input class="form-control" type="date" id="CustomerPolicy.Fromdate " placeholder="FromDate">
+        </div>
+        <div class="form-group ">
+            <label for="CustomerPolicy.Todate">To Date </label>
+
+            <input class="form-control" type="date" id="CustomerPolicy.Todate " placeholder="To Date">
+        </div>
+        <div class="form-group ">
+
+                <label for="agentselect">Agents</label>
+                <select class="custom-select" id="agentselect" onload="selectAgents()" onchange="selectAgents()">
+                        <option disabled selected value="">Select An Option</option>
+                    <option value='All Agents'>All Agents</option>
+                    <option value='Single Agent'>Single Agent</option>
+                </select>
+            </div>
+            <hr>
+            <div class="form-group" id="agentid">
+                <label for="Customer.AgentId">Agent ID</label>
+                <input type="text" class="form-control" placeholder="AgentId" >
+            </div>
+            <div class="form-group"><center>
+                <button class="btn btn-primary col-6" type="submit">Submit</button></center>
+            </div>
+    </div>
+    <script>$("#agentid").hide();</script>
+</body>
+
+</html>

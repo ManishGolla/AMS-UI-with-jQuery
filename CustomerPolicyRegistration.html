@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer Policy Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="AdminHome.html">AMS</a>
+<ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="AgentRegistration.html">Agent Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CalculateCommission.html">Calculate Commission</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MangeLicences.html">Manage Licences</a>
+      </li>
+      <li class="nav-item active">
+            <a class="nav-link" href="#">Customer Policy Registration</a>
+          </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+            <a class="btn btn-info" href="HomePage.html">Logout</a>
+        </ul>
+  </nav>
+   
+   
+    <div class="container jumbotron bg-light col-6 mt-5" class="container jumbotron bg-light col-6 mt-5">
+
+        <center>
+            <h3>Customer Policy Registration</h3>
+        </center>
+
+
+
+        <hr>
+
+        <form action="" id="CustomerPolicy.form">
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.Name">Policy Name</label>
+
+                <input class="form-control" id="CustomerPolicy.Name" type="text" name="" placeholder="Policy Name">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.Company-Name "> Policy Company-Name </label>
+
+                <textarea class="form-control" id="CustomerPolicy.Company-Name " type="text" rows="3" placeholder="Enter Policy Company-Name "></textarea>
+
+            </div>
+
+            <div class="form-group "><label for="CustomerPolicy.Bookingdate">Policy Booking Date</label>
+
+                <input class="form-control" type="date" id="CustomerPolicy.Bookingdate" placeholder="Date of Booking">
+
+            </div>
+
+            <div class="form-group "><label for="CustomerPolicy.Totalsum">Total Sum</label>
+
+                <input class="form-control" id="CustomerPolicy.Totalsum" type="text" name="">
+
+            </div>
+
+            <div class="form-group "><label for="CustomerPolicy.Paymentmode">Payment Mode</label>
+
+                <input class="form-control" id="CustomerPolicy.Paymentmode" type="text" name="">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.AgentID">Agent ID</label>
+
+                <input class="form-control" id="CustomerPolicy.AgentID" type="text" name="">
+
+            </div>
+
+            <div class="form-group ">
+                <label for="CustomerPolicy.DOB">Date of Birth</label>
+
+                <input class="form-control" type="date" id="CustomerPolicy.DOB " placeholder="Date of Birth">
+
+
+
+               
+
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.Height">Height</label>
+
+                <input class="form-control" id="CustomerPolicy.Height" type="text" name="" placeholder="Enter your height in (mts.) ">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.Weight">Weight</label>
+
+                <input class="form-control" id="CustomerPolicy.Weight" type="text" name="" placeholder="Your Weight in (kgs.)">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.Mode">Identification marks</label>
+                <input type="text" class="form-control" id="CustomerPolicy.Identification" placeholder="Identification marks">
+
+               
+
+                <!-- <label>Phone</label>
+
+                                    <input class="form-control" type="radio" name="mode">
+
+                                    <label>Email</label>
+
+                                    <input class="form-control" type="radio" name="mode">
+
+                                    <br>
+
+                                    <input class="form-control" id="CustomerPolicy.Mode" type="text" name="" placeholder="mode">-->
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.Nominee">Nominee name</label>
+
+                <input class="form-control" type="text" id="CustomerPolicy.Nominee" name="" placeholder="Name of Nominee">
+
+            </div>
+
+            <div class="form-group ">
+
+                <label for="CustomerPolicy.NomineeRealtionship">Nominee realtionship</label>
+                <input class="form-control" type="text" id="CustomerPolicy.NomineeRealtionship" name="" placeholder="Realtionship with Nominee">
+
+
+            </div>
+            <div class="form-group ">
+                <label for="CustomerPolicy.NomineeDOB">Nominee Date of Birth </label>
+
+                <input class="form-control" type="date" id="CustomerPolicy.DOB " placeholder="Date of Birth of Nominee">
+
+
+
+
+
+            </div>
+
+            <hr>
+            <div class="form-group ">
+                    <center>
+                            <button type="submit col-6" class="btn btn-primary col-5">Submit</button>
+                            <button class="btn  col-6" id="Customer.reset" type="reset" value="Reset">Reset</button>
+                        </center>
+            </div>
+            
+    </div>
+
+    </form>
+
+</body>
+
+</html>
